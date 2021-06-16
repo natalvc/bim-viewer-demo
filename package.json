@@ -43,7 +43,7 @@
     "mustache": "3.2.1",
     "newtype-ts": "^0.3.4",
     "ng4-click-outside": "1.0.1",
-    "ol": "^6.4.2",
+    "ol": "6.5.0",
     "proj4": "2.6.2",
     "resize-observer": "1.0.0",
     "scroll-into-view-if-needed": "^2.2.26",
