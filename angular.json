@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-kaart-demo:build"
+            "browserTarget": "ng-kaart-demo:build",
+            "port": 9000
           },
           "configurations": {
             "production": {

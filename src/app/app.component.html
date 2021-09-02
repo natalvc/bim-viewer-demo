@@ -1,18 +1,14 @@
-<p>
-  <button (click)="zetBestaandeLocaties()">Zet bestaande locaties</button>
-</p>
+Viewer:
 
-<awv-kaart-classic [naam]="'tabel'" [hoogte]="800"
-                   [zoom]="10" [selectieModus]="'single'" [middelpunt]="[154100, 208500]" >
+<hr>
 
-  <awv-kaart-zoeker></awv-kaart-zoeker>
+<div class="awv-bimviewer">
+<awv-bimviewer
+  #bimViewer
+  id="onzeViewer"
+               modelurn="urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6YmltLXZpZXdlci9LWl9DM0RfY2tpdF8wLjIuMV92b29yYmVlbGRfaWRfZW5fZ2VvLmR3Zw"
+               modelname="OTL model" viewrole="3d">
+</awv-bimviewer>
+</div>
 
-  <awv-locatie-ingave [bestaandeLocaties]="bestaandeLocaties"></awv-locatie-ingave>
-
-  <awv-kaart-geoserver-laag [titel]="'Referentiepunten'" [laagNaam]="'referentiepunten'" [versie]="'1.1.1'"></awv-kaart-geoserver-laag>
-  <awv-kaart-tilecache-laag [titel]="'Dienstkaart'" [laagNaam]="'dienstkaart'"></awv-kaart-tilecache-laag>
-
-  <awv-kaart-zoomknoppen></awv-kaart-zoomknoppen>
-  <awv-kaart-standaard-interacties [focusVoorZoom]="true"></awv-kaart-standaard-interacties>
-</awv-kaart-classic>
-
+<hr>

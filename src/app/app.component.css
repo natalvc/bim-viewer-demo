@@ -1,0 +1,7 @@
+.awv-bimviewer {
+  width: 40%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  resize: both;
+}

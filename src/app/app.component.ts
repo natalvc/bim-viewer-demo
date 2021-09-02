@@ -3,7 +3,7 @@ import { VeldInfo } from '@wegenenverkeer/ng-kaart';
 import * as kaart from '@wegenenverkeer/ng-kaart/lib/kaart/locatie-ingave/locatie-ingave-model';
 import { option } from 'fp-ts';
 import * as ol from '@wegenenverkeer/ng-kaart';
-
+import '@awv/awv-bimviewer';
 
 export class VeldInfos {
   public static readonly snelheidsregimesVeldinfos: VeldInfo[] = [
