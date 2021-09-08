@@ -1,7 +1,18 @@
+
+.demo {
+  padding: 16px;
+}
+
 .awv-bimviewer {
   width: 40%;
   height: 700px;
   position: relative;
   overflow: hidden;
   resize: both;
+  padding: 16px;
+}
+
+.viewers {
+  display: flex;
+  padding: 16px;
 }

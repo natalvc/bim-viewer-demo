@@ -1,14 +1,19 @@
-Viewer:
 
-<hr>
+<div class="demo">
 
-<div class="awv-bimviewer">
-<awv-bimviewer
-  #bimViewer
-  id="onzeViewer"
-               modelurn="urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6YmltLXZpZXdlci9LWl9DM0RfY2tpdF8wLjIuMV92b29yYmVlbGRfaWRfZW5fZ2VvLmR3Zw"
-               modelname="OTL model" viewrole="3d">
-</awv-bimviewer>
+  <input type="checkbox" [checked]="toon2d" (change)="switchViewer()" /> 2D
+
+  <div class="viewers">
+
+    <div class="awv-bimviewer" *ngIf="toon2d">
+      <awv-bimviewer #bimViewer2d id="viewer2d"></awv-bimviewer>
+    </div>
+
+    <div class="awv-bimviewer" *ngIf="!toon2d">
+      <awv-bimviewer #bimViewer3d id="viewer3d"></awv-bimviewer>
+    </div>
+
+  </div>
+
 </div>
 
-<hr>
